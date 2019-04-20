@@ -1,0 +1,25 @@
+{
+	"manifest_version": 2,
+	"name": "NicoNicoAppliFullscreen",
+	"version": "1.0.0",
+	"description": "ニコニコアプリをフルスクリーンに対応させる",
+	"content_scripts": [
+		{
+			"matches": [
+				"http://app.nicovideo.jp/watch/*",
+				"https://app.nicovideo.jp/watch/*"
+			],
+			"js": [
+				"js/main.js"
+			],
+			"css": [
+				"css/style.css"
+			]
+		}
+	],
+	"icons": {
+		"16": "./logo.png",
+		"48": "./logo.png",
+		"128": "./logo.png"
+	}
+  }
